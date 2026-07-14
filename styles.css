@@ -61,7 +61,7 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .hero::after { position: absolute; z-index: -2; right: -8vw; bottom: -35vw; width: 70vw; aspect-ratio: 1; border-radius: 50%; background: var(--lime); content: ""; }
 .hero-orbit { position: absolute; z-index: -1; right: 1vw; top: 17vh; width: min(42vw, 630px); aspect-ratio: 1; border: 1px solid rgba(217,255,99,.32); border-radius: 50%; animation: breathe 8s ease-in-out infinite; }
 .orbit-b { right: 8vw; top: 24vh; width: min(28vw, 420px); animation-delay: -2s; }
-.hero-copy { position: relative; z-index: 5; width: min(920px, 68vw); }
+.hero-copy { position: relative; z-index: 5; width: min(1080px, 82vw); }
 .eyebrow { display: flex; align-items: center; gap: 11px; margin-bottom: clamp(30px, 5vh, 62px); color: rgba(255,255,255,.64); font: 400 10px "DM Mono", monospace; letter-spacing: .22em; }
 .eyebrow i { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 18px var(--lime); animation: pulse 2.4s infinite; }
 .hero h1 { display: flex; align-items: end; gap: clamp(20px, 3vw, 48px); margin: 0; line-height: .8; }
@@ -73,18 +73,6 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .primary-button { display: flex; align-items: center; justify-content: space-between; min-width: 210px; padding: 17px 19px; border-radius: 8px; background: var(--lime); color: var(--forest-deep); font-size: 12px; transition: transform .25s ease, box-shadow .25s ease; }
 .primary-button:hover { box-shadow: 0 12px 28px rgba(217,255,99,.16); transform: translateY(-3px); }
 .plain-link { padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,.3); color: rgba(255,255,255,.76); font-size: 12px; }
-.hero-portrait { position: absolute; z-index: 4; right: clamp(24px, 7vw, 112px); top: 24vh; width: clamp(210px, 20vw, 310px); }
-.portrait-card { position: relative; isolation: isolate; overflow: hidden; width: 100%; aspect-ratio: .78; border: 1px solid rgba(255,255,255,.23); border-radius: 45% 45% 14px 14px; background: var(--lime); color: var(--forest-deep); box-shadow: 0 25px 80px rgba(3,25,16,.3); }
-.portrait-card::before { position: absolute; z-index: -1; right: -42%; bottom: -22%; width: 110%; aspect-ratio: 1; border: 1px solid rgba(16,63,43,.24); border-radius: 50%; content: ""; }
-.portrait-card::after { position: absolute; z-index: -1; right: -15%; bottom: 4%; width: 58%; aspect-ratio: 1; border: 1px solid rgba(16,63,43,.3); border-radius: 50%; content: ""; }
-.portrait-monogram { position: absolute; top: 21%; left: 12%; font: 500 clamp(76px, 9vw, 130px)/.8 "DM Mono", monospace; letter-spacing: -.14em; }
-.portrait-card > p { position: absolute; top: 54%; left: 14%; margin: 0; font: 500 clamp(10px, 1vw, 14px)/1.65 "DM Mono", monospace; letter-spacing: .12em; }
-.portrait-signal { position: absolute; top: 16%; right: 15%; width: 10px; height: 10px; border-radius: 50%; background: var(--forest); box-shadow: 0 0 0 8px rgba(16,63,43,.12), 0 0 0 16px rgba(16,63,43,.06); animation: pulse 2.4s infinite; }
-.portrait-index, .portrait-role { position: absolute; z-index: 2; bottom: 18px; font: 400 8px "DM Mono", monospace; letter-spacing: .14em; }
-.portrait-index { left: 17px; color: rgba(16,63,43,.52); }
-.portrait-role { right: 17px; color: var(--forest-deep); }
-.availability { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px; color: rgba(255,255,255,.65); font: 400 8px "DM Mono", monospace; letter-spacing: .13em; }
-.availability i { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); }
 .hero-foot { position: absolute; z-index: 4; right: clamp(24px, 6vw, 100px); bottom: 28px; left: clamp(24px, 6vw, 100px); display: flex; justify-content: space-between; color: rgba(255,255,255,.45); font: 400 8px "DM Mono", monospace; letter-spacing: .15em; }
 
 .metrics { position: relative; z-index: 6; display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); background: var(--lime); }
@@ -202,7 +190,6 @@ footer { display: flex; justify-content: space-between; padding: 28px clamp(24px
   .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
   .hero-copy { width: 100%; }
-  .hero-portrait { opacity: .5; right: -8vw; top: 20vh; width: 35vw; }
   .hero-statement, .hero-actions { margin-left: 0; }
   .hero::after { bottom: -45vw; }
   .metrics { grid-template-columns: 1fr 1fr; }
@@ -225,7 +212,6 @@ footer { display: flex; justify-content: space-between; padding: 28px clamp(24px
   .hero h1 em { display: block; padding: 20px 0 0 5px; font-size: 12px; }
   .hero-statement { margin-top: 58px; font-size: 26px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 22px; }
-  .hero-portrait { right: -30px; top: 475px; width: 205px; opacity: .92; }
   .hero-orbit { top: 500px; right: -50px; width: 300px; }
   .orbit-b { display: none; }
   .hero::after { right: -190px; bottom: -120px; width: 430px; }
